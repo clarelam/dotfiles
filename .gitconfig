@@ -4,24 +4,27 @@
 	required = true
 [user]
 	name = Clare Lam
-[user]
-	email = clare.lam@accenture.com
+	email = clare.cylam@gmail.com
 
+# git config --global diff.tool bc
 [diff]
 	tool = bc
 [difftool]
 	prompt = false
-[difftool "bc"]
-	path = C:/Program Files/Beyond Compare 4/bcomp.exe
-     	cmd = \"C:/Program Files/Beyond Compare 4/bcomp.exe\" \"$LOCAL\" \"$REMOTE\"
-	trustExitCode = true
+#[difftool "bc"]
+#	path = C:/Program Files/Beyond Compare 4/bcomp.exe
+#     	cmd = \"C:/Program Files/Beyond Compare 4/bcomp.exe\" \"$LOCAL\" \"$REMOTE\"
+#	trustExitCode = true
 
+# git config --global merge.tool bc
+# git config --global mergetool.bc.trustExitCode true
 [merge]
 	tool = bc
 [mergetool "bc"]
-	path = C:/Program Files/Beyond Compare 4/bcomp.exe
-     	cmd = \"C:/Program Files/Beyond Compare 4/bcomp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
 	trustExitCode = true
+#	path = C:/Program Files/Beyond Compare 4/bcomp.exe
+#     	cmd = \"C:/Program Files/Beyond Compare 4/bcomp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+
 [core]
 	editor = vim
 [gui]
